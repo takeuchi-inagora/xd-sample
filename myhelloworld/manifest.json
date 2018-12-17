@@ -12,6 +12,16 @@
         "type": "menu",
         "label": "hello color",
         "commandId": "helloCommand"
-      }
-   ]
+      },
+      {
+      "type": "menu",
+      "label": "How to show an alert",
+      "commandId": "showAlert"
+    },
+    {
+      "type": "menu",
+      "label": "How to show an error",
+      "commandId": "showError"
+    }
+  ]
 }

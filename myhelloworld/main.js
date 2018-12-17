@@ -1,4 +1,5 @@
 const {Text, Color} = require("scenegraph"); // XD拡張APIのクラスをインポート
+const { alert, error } = require("./lib/dialogs.js"); //ダイアログのクラスインポート
 
 function helloHandlerFunction(selection) { // メインのファンクション
   console.log("my function is called!"); // Developer Consoleに出力
@@ -115,8 +116,22 @@ function helloHandlerFunction(selection) { // メインのファンクション
   //console.log("OS locale:", application.systemLocale); // e.g. "en_US"
 }
 
+async function showAlert() {
+    /* we'll display a dialog here */
+    console.log("エラー");
+}
+
+await error("Synchronization Failed", //[1]
+    "Failed to synchronize all your changes with our server. Some changes may have been lost.",
+    "Steps you can take:",
+    "* Save your document",
+    "* Check your network connection",
+    "* Try again in a few minutes"); //[2]
+
 module.exports = { // コマンドIDとファンクションの紐付け
   commands: {
-    helloCommand: helloHandlerFunction
+    helloCommand: helloHandlerFunction,
+    showAlert,
+    showError
   }
 };
