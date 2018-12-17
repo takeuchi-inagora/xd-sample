@@ -1,7 +1,7 @@
 {
   "id": "c7091f9f",
-  "name": "Hello World sample plugin",
-  "description": "Hello, World!",
+  "name": "hello colo",
+  "description": "hello colo!",
   "version": "1.0.0",
   "host": {
     "app": "XD",
@@ -9,18 +9,18 @@
   },
   "uiEntryPoints": [
       {
-        "type": "menu",
-        "label": "hello color",
-        "commandId": "helloCommand"
-      },
+      "type": "menu",
+      "label": "hello color",
+      "commandId": "helloCommand"
+    },
       {
       "type": "menu",
-      "label": "How to show an alert",
+      "label": "show an alert",
       "commandId": "showAlert"
     },
     {
       "type": "menu",
-      "label": "How to show an error",
+      "label": "show an error",
       "commandId": "showError"
     }
   ]
