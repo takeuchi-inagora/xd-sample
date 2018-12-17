@@ -10,7 +10,7 @@
   "uiEntryPoints": [
       {
         "type": "menu",
-        "label": "Say hello",
+        "label": "hello color",
         "commandId": "helloCommand"
       }
    ]
