@@ -18,9 +18,23 @@ function helloHandlerFunction(documentRoot) { // メインのファンクショ�
 
   nodeL1 = documentRoot.items[0];
   nodeL2 = documentRoot.items[1];
+  //console.log("The selected node is b: " + nodeL1.fill.b);
+  //console.log("The selected node is b: " + nodeL2.fill.b);
 
   selection.insertionParent.addChild(el); // XDノードツリーにテキストオブジェクトを追加
   el.moveInParentCoordinates(100, 100); // テキストオブジェクトの表示位置を指定
+
+  //console.log("文字の色取得a" + el.fill.a); // Developer Consoleに出力
+  //console.log("文字の色取得r" + el.fill.r); // Developer Consoleに出力
+  //console.log("文字の色取得g" + el.fill.g); // Developer Consoleに出力
+  //console.log("文字の色取得b" + el.fill.b); // Developer Consoleに出力
+  //console.log("RootNode has " + selection.items.length + " children");
+  //console.log("color " + selection.items[0].fill.a + " =a");
+  //色の相対輝度は、 L =0.2126*R + 0.7152*G + 0.0722*B
+  //console.log("文字の色取得a" + el.fill.r/16); // Developer Consoleに出力
+  //console.log("文字の色取得b" + el.fill.b/16); // Developer Consoleに出力
+  //console.log("文字の色取得g" + el.fill.g/16); // Developer Consoleに出力
+
 
   /*----------------------------------------------------------------
   一つ目の色
@@ -83,12 +97,20 @@ function helloHandlerFunction(documentRoot) { // メインのファンクショ�
      G2 = Math.pow(((G2_255 + 0.055)/1.055),2.4);
   }
   console.log("色の相対輝度G2-->" + G2); // Developer Consoleに出力
+
+  //console.log("色の相対輝度1-->" + (R1*0.2126/1) + (G1*0.7152/1) + (B1*0.0722/1)); // Developer Consoleに出力
+  //console.log("色の相対輝度2-->" + (R2*0.2126/1) + (G2*0.7152/1) + (B2*0.0722/1)); // Developer Consoleに出力
   
   //色の相対輝度出し方
-  colorL1 = ((R1*0.2126/1) + (G1*0.7152/1) + (B1*0.0722/1) + 0.05).toFixed(2);;
-  colorL2 = ((R2*0.2126/1) + (G2*0.7152/1) + (B2*0.0722/1) + 0.05).toFixed(2);;
+  colorL1 = ((R1*0.2126/1) + (G1*0.7152/1) + (B1*0.0722/1) + 0.05);
+  colorL2 = ((R2*0.2126/1) + (G2*0.7152/1) + (B2*0.0722/1) + 0.05);
 
   console.log("色のコントラスト比@colorL1:colorL2-->" + colorL1 + ":" + colorL2); // Developer Consoleに出力
+
+  //let application = require("application");
+  //console.log("Version:", application.version);        // e.g. "13.0.21.3"
+  //console.log("XD locale:", application.appLanguage);  // e.g. "en"
+  //console.log("OS locale:", application.systemLocale); // e.g. "en_US"
   showAlert();
 }
 
