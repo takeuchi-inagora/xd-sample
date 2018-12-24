@@ -11,12 +11,10 @@
       {
       "type": "menu",
       "label": "色の比較",
-<<<<<<< HEAD
-      "commandId": "helloCommand"
-=======
+
       "commandId": "helloCommand",
       "shortcut": { "mac": "Cmd+Shift+P", "win": "Ctrl+Shift+P" }
->>>>>>> dialog
+
     }
   ]
 }
