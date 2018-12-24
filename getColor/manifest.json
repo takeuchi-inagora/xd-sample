@@ -11,17 +11,8 @@
       {
       "type": "menu",
       "label": "色の比較",
-      "commandId": "helloCommand"
-    },
-      {
-      "type": "menu",
-      "label": "アラート表示",
-      "commandId": "showAlert"
-    },
-    {
-      "type": "menu",
-      "label": "エラー表示",
-      "commandId": "showError"
+      "commandId": "helloCommand",
+      "shortcut": { "mac": "Cmd+Shift+P", "win": "Ctrl+Shift+P" }
     }
   ]
 }
