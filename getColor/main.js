@@ -125,7 +125,7 @@ function helloHandlerFunction(documentRoot) { // メインのファンクショ�
   colorL2 = ((R2 * 299) + (G2 * 587) + (B2 * 114)/1000);
 
   //console.log("色のコントラスト比@colorL1:colorL2-->" + colorL1 + " : " + colorL2); // Developer Consoleに出力
-  console.log("色のコントラスト比@colorL1:colorL-->" + (colorL1/colorL2)); // Developer Consoleに出力
+  console.log("色のコントラスト比@colorL1:colorL-->" + (colorL1+0.005/colorL2+0.005)); // Developer Consoleに出力
   showAlert();
 }
 
